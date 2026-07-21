@@ -1,0 +1,8 @@
+.DS_Store
+._*
+
+# Local working archive: supplied brand documents, references, drafts, and prompts.
+/(BIAA X AIBB) 브랜드 소개 및 BI 가이드/
+
+# Unsorted root-level generations retained locally only.
+/ChatGPT Image*.png
