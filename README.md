@@ -101,19 +101,58 @@
 
 ## 제작 플로우보드
 
-PiiX(ComfyUI 기반) 플로우보드에서 실제로 분기한 생성 노드들을 제품·연출샷·포스터 3개 흐름으로 재구성했다. 각 흐름은 리서치·디자인매핑 단계를 공유하고, 반복 보정을 거쳐 최종 채택 파일(아래 `최종 파일` 표의 3개)로 수렴한다. 순서는 각 노드에 남은 생성일시·모델·프롬프트를 기준으로 재구성한 것으로, 내보내지 않은 일부 중간 노드는 생략했다.
+PiiX(ComfyUI 기반) 플로우보드 원본 캡처다. 제품 시안 · 연출샷 · 포스터 3갈래로 나눴고, 리서치·디자인매핑 같은 공통 기획 단계와 각 항목의 세부 생성 노드는 아래 토글에 접어 두었다.
 
-**제품** — 하나의 절대기준 이미지를 고정한 뒤 모든 후속 장면의 레퍼런스로 사용했다.
+<details>
+<summary>기획 단계 원본 노드 (리서치 · 디자인매핑)</summary>
 
-![제품 흐름](assets/flow/flowboard-product.png)
+![리서치 섹션](assets/flow/raw/trunk-01-research.jpg)
+![디자인매핑 섹션](assets/flow/raw/trunk-02-designmap.jpg)
 
-**연출샷** — 와이드 구도(채택)와 근접 구도(탐색 후 미채택) 두 방향을 병행 실험했다.
+</details>
 
-![연출샷 흐름](assets/flow/flowboard-campaign.png)
+### 제품 시안
 
-**포스터** — 타이틀 강조 버전에서 로고 락업 버전을 거쳐 최종 포스터로 수렴했다.
+![제품 시안 생성 설정](assets/flow/raw/product-main-1-setup.jpg)
+![제품 시안 완성](assets/flow/raw/product-main-2-final.jpg)
 
-![포스터 흐름](assets/flow/flowboard-poster.png)
+<details>
+<summary>원본 노드 보기</summary>
+
+![제품 노드](assets/flow/raw/product-node-1.jpg)
+
+</details>
+
+### 연출샷
+
+![연출샷 진행 1](assets/flow/raw/campaign-main-1.jpg)
+![연출샷 진행 2](assets/flow/raw/campaign-main-2.jpg)
+![연출샷 진행 3](assets/flow/raw/campaign-main-3.jpg)
+
+<details>
+<summary>원본 노드 보기</summary>
+
+![연출샷 노드 1](assets/flow/raw/campaign-node-1.jpg)
+![연출샷 노드 2](assets/flow/raw/campaign-node-2.jpg)
+![연출샷 노드 3](assets/flow/raw/campaign-node-3.jpg)
+![연출샷 노드 4](assets/flow/raw/campaign-node-4.jpg)
+![연출샷 노드 5](assets/flow/raw/campaign-node-5.jpg)
+![연출샷 노드 6](assets/flow/raw/campaign-node-6.jpg)
+![연출샷 노드 7](assets/flow/raw/campaign-node-7.jpg)
+
+</details>
+
+### 포스터
+
+![포스터 진행](assets/flow/raw/poster-main.jpg)
+
+<details>
+<summary>원본 노드 보기</summary>
+
+![포스터 노드 1](assets/flow/raw/poster-node-1.jpg)
+![포스터 노드 2](assets/flow/raw/poster-node-2.jpg)
+
+</details>
 
 ## 최종 파일
 
