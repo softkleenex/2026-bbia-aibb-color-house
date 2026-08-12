@@ -113,8 +113,7 @@ PiiX(ComfyUI 기반) 플로우보드 원본 캡처다. 제품 시안 · 연출�
 
 ### 제품 시안
 
-![제품 시안 생성 설정](assets/flow/raw/product-main-1-setup.jpg)
-![제품 시안 완성](assets/flow/raw/product-main-2-final.jpg)
+![제품 시안 생성 설정에서 완성으로 이어지는 흐름](assets/flow/product-flow-connect.png)
 
 <details>
 <summary>원본 노드 보기</summary>
