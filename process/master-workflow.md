@@ -1,8 +1,10 @@
 # THE COLOR HOUSE — BBIA × AIBB 공모전 마스터 워크플로우
 
-> 공모전 종료 후 공개한 작업 기록 원본이다. 진행 중 작성한 내용을 그대로 두었고, 본문의 `workfiles/...` 경로는 로컬 아카이브 기준이라 공개 저장소에는 없다.
+> 공모전 진행 중 단일 작업 기준으로 쓴 기록이다. 종료 후 공개하면서 로컬 파일 경로·해시·폴더 관리 규칙만 걷어내고, 판단과 프롬프트는 당시 그대로 두었다.
+>
+> 중간 생성본은 `캐릭터 기준본 v01`처럼 이름으로만 참조한다. 공개 저장소에 있는 이미지는 `assets/final/`의 최종 3종뿐이다.
 
-이 문서를 단일 작업 기준으로 사용한다. 이전 `ONE DNA TWIN POT`, `SISTER COLOR CHARM` 기획은 활성 작업에서 제외하며 `workfiles/99_archive/rejected_concepts/`에만 보관한다.
+이 문서를 단일 작업 기준으로 사용한다. 이전 `ONE DNA TWIN POT`, `SISTER COLOR CHARM` 기획은 활성 작업에서 제외하며 `process/rejected-concepts.md`에만 보관한다.
 
 ## 1. 확정 콘셉트
 
@@ -49,79 +51,23 @@
 
 전략: 제품 시안, 연출 이미지, 포스터가 모두 같은 두 자매·같은 인형의 집·같은 제품을 보여주는 하나의 캠페인처럼 보여야 한다.
 
-## 3. 폴더 구조
+## 3. 레퍼런스 사용표
 
-```text
-BBIA × AIBB/
-├── README.md
-├── REPORT.md
-├── assets/final/                 유일한 최종 제출 이미지 원본
-└── workfiles/
-    ├── 00_admin/                공모전 요강
-    ├── 01_brand_source/         공식 가이드·로고
-    ├── 02_research/             브랜드·출품 전략
-    ├── 03_references/           얼굴·제품·공간 레퍼런스
-    ├── 04_workflow/             본 마스터 기록
-    ├── 05_working/              단계별 기준본과 유효 후보
-    └── 99_archive/              실패·폐기·이전 버전
-```
-
-파일명 규칙:
-
-```text
-01_character_sisters_ref_v01.png
-02_keyvisual_color_house_ref_v01.png
-03_product_color_room_duo_ref_v01.png
-01_color_room_duo_product.png
-05_piix_scene_01_roomwide_alt_v01.png
-06_piix_scene_02_closeup_v00.png
-06_nanobanana_scene_02_closeup_v01.png
-07_scene_closeup_people_ref_v01.png
-06_poster_base_4x5_v01.png
-07_poster_editorial_4x5_v03.png
-08_piix_poster_final_4x5_v01.png
-09_piix_poster_preferred_visual_v00.png
-```
-
-선택하지 않은 생성물은 실패 유형에 따라 `workfiles/99_archive/`에 넣는다. 활성 폴더에는 단계별 기준본과 유효 후보만 둔다.
-
-### 현재 활성 자산
-
-- 캐릭터 기준: `workfiles/05_working/01_character/01_character_sisters_ref_v01.png`
-- 공간 기준: `workfiles/05_working/02_key_visual/02_keyvisual_color_house_ref_v01.png`
-- 제품 설계 기준: `workfiles/05_working/03_product/03_product_color_room_duo_ref_v01.png`
-- PiiX 제품 최종: `assets/final/01_color_room_duo_product.png`
-- PiiX 방 전체 연출 대안: `workfiles/05_working/04_campaign/05_piix_scene_01_roomwide_alt_v01.png`
-- PiiX 근접 사용 연출 원본·PiiX 보드 선택 가능: `workfiles/05_working/04_campaign/06_piix_scene_02_closeup_v00.png`
-- 나노바나나 근접 연출 수정본·외부 보정 참고: `workfiles/05_working/04_campaign/06_nanobanana_scene_02_closeup_v01.png`
-- 점 두 개 인물·구도 기준본·제품은 기준으로 사용하지 않음: `workfiles/05_working/04_campaign/07_scene_closeup_people_ref_v01.png`
-- BBIA 공식 검정 로고: `workfiles/01_brand_source/logos/BBIA_logo_black.png`
-- AIBB 공식 빨강 로고: `workfiles/01_brand_source/logos/AIBB_logo_red.png`
-- 4:5 무문자 포스터 베이스: `workfiles/05_working/05_poster/06_poster_base_4x5_v01.png`
-- 수동 조판 완성본: `workfiles/05_working/05_poster/07_poster_editorial_4x5_v03.png`
-- PiiX 제출용 포스터: `workfiles/05_working/05_poster/08_piix_poster_final_4x5_v01.png`
-- 사용자가 선호하는 포스터 통합 구도 기준본: `workfiles/05_working/05_poster/09_piix_poster_preferred_visual_v00.png`
-- 상태: 최종 제출과 공개 아카이빙 완료
-
-v00, 비선택 수정본, 실패한 추가 연출안과 폐기된 콘셉트는 모두 `workfiles/99_archive/`에만 보관한다. 캐릭터 얼굴 원본과 제품보드는 최종 제출 이미지가 아니라 기준본의 출처이므로 `workfiles/03_references/`에 유지한다.
-
-## 4. 레퍼런스 사용표
-
-| 파일 | 역할 | 사용 단계 |
+| 자료 | 역할 | 사용 단계 |
 |---|---|---|
-| `workfiles/03_references/ref_01_자매의_인형의집_사진만.png` | 인형의 집, 미니어처 화장대, 키치한 공간과 촬영 무드 | 메인 비주얼·연출 이미지 |
-| `workfiles/03_references/ref_02_AIBB_제품보드_슬라이드03-13.png` | PDF 3~13페이지 전체. AIBB의 BI, 제품, 컬러, COLOR·ARCHIVE·SNACKABLE | 제품·컬러·공간 설계 전용. 1단계 캐릭터 입력에는 사용하지 않음 |
-| `workfiles/03_references/ref_03_BBIA_제품보드_슬라이드14-23.png` | PDF 14~23페이지 전체. BBIA의 BI, 컬러, 제품군, Bold·Trendy·Creative | 제품·컬러·공간 설계 전용. 1단계 캐릭터 입력에는 사용하지 않음 |
-| `workfiles/03_references/ref_04_BBIA_AIBB_통합보드.png` | 두 브랜드의 대비를 한 장으로 전달 | PiiX 레퍼런스 3장 제한 단계 |
-| `workfiles/03_references/character_faces/02_GPT입력용_합본/AIBB_동생_얼굴_합본.png` | AIBB 모델 얼굴 5컷. 두 개의 시그니처 점, 글로우·블러 메이크업과 헤어 태도 | 캐릭터 생성·AIBB 얼굴 보정 |
-| `workfiles/03_references/character_faces/02_GPT입력용_합본/BBIA_언니_얼굴_합본.png` | BBIA 모델 얼굴 5컷. 흑발, 정돈된 포인트 메이크업과 언니의 태도 | 캐릭터 생성 |
-| `workfiles/01_brand_source/logos/BBIA_logo_black.png` | 브랜드 가이드의 BBIA 공식 검정 로고. 최소 크기 8.703×2.42mm | 포스터·제출본 브랜드 락업 |
-| `workfiles/01_brand_source/logos/AIBB_logo_red.png` | 브랜드 가이드의 AIBB 공식 빨강 로고 | 포스터·제출본 브랜드 락업 |
-| `workfiles/01_brand_source/logos/AIBB_logo_black_guide_source.png` | AIBB 공식 검정 버전과 그리드 참고. 최종 포스터에는 빨강 버전 사용 | 로고 사용 규정 참고 |
+| `레퍼런스: 인형의 집 공간` | 인형의 집, 미니어처 화장대, 키치한 공간과 촬영 무드 | 메인 비주얼·연출 이미지 |
+| `레퍼런스: AIBB 제품보드` | PDF 3~13페이지 전체. AIBB의 BI, 제품, 컬러, COLOR·ARCHIVE·SNACKABLE | 제품·컬러·공간 설계 전용. 1단계 캐릭터 입력에는 사용하지 않음 |
+| `레퍼런스: BBIA 제품보드` | PDF 14~23페이지 전체. BBIA의 BI, 컬러, 제품군, Bold·Trendy·Creative | 제품·컬러·공간 설계 전용. 1단계 캐릭터 입력에는 사용하지 않음 |
+| `레퍼런스: BBIA × AIBB 통합보드` | 두 브랜드의 대비를 한 장으로 전달 | PiiX 레퍼런스 3장 제한 단계 |
+| `레퍼런스: AIBB 동생 얼굴 합본` | AIBB 모델 얼굴 5컷. 두 개의 시그니처 점, 글로우·블러 메이크업과 헤어 태도 | 캐릭터 생성·AIBB 얼굴 보정 |
+| `레퍼런스: BBIA 언니 얼굴 합본` | BBIA 모델 얼굴 5컷. 흑발, 정돈된 포인트 메이크업과 언니의 태도 | 캐릭터 생성 |
+| `공식 BBIA 검정 로고` | 브랜드 가이드의 BBIA 공식 검정 로고. 최소 크기 8.703×2.42mm | 포스터·제출본 브랜드 락업 |
+| `공식 AIBB 빨강 로고` | 브랜드 가이드의 AIBB 공식 빨강 로고 | 포스터·제출본 브랜드 락업 |
+| `공식 AIBB 검정 로고 (가이드 참고)` | AIBB 공식 검정 버전과 그리드 참고. 최종 포스터에는 빨강 버전 사용 | 로고 사용 규정 참고 |
 
 레퍼런스는 스타일·색·구조 참고용이다. 이미지 속 인물, 로고, 제품과 문구를 그대로 복제하지 않는다.
 
-## 5. 전체 제작 순서
+## 4. 전체 제작 순서
 
 ```text
 공식 자료·레퍼런스
@@ -158,12 +104,12 @@ v00, 비선택 수정본, 실패한 추가 연출안과 폐기된 콘셉트는 �
 
 # 단계별 프롬프트
 
-## 6. 1단계 — 두 자매 캐릭터 기준 이미지
+## 5. 1단계 — 두 자매 캐릭터 기준 이미지
 
 ### 입력 레퍼런스
 
-1. `workfiles/03_references/character_faces/02_GPT입력용_합본/AIBB_동생_얼굴_합본.png` — 이미지 1, AIBB 동생 얼굴·두 점·메이크업 참고
-2. `workfiles/03_references/character_faces/02_GPT입력용_합본/BBIA_언니_얼굴_합본.png` — 이미지 2, BBIA 언니 얼굴·헤어·메이크업 참고
+1. `레퍼런스: AIBB 동생 얼굴 합본` — 이미지 1, AIBB 동생 얼굴·두 점·메이크업 참고
+2. `레퍼런스: BBIA 언니 얼굴 합본` — 이미지 2, BBIA 언니 얼굴·헤어·메이크업 참고
 
 1단계에서는 위 얼굴 합본 2장만 입력한다. `ref_02_AIBB_제품보드`, `ref_03_BBIA_제품보드`, `ref_04_통합보드`와 인형의 집 이미지는 넣지 않는다. 제품·공간 정보가 얼굴 생성에 섞이는 것을 방지하기 위한 고정 규칙이다.
 
@@ -223,7 +169,7 @@ AIBB 동생 본인의 왼쪽 볼, 즉 정면 이미지를 보는 사람 기준�
 - 두 사람 모두 명확한 성인으로 보이는가
 - 이후 이미지에서 반복 사용하기 좋은 정면 얼굴인가
 
-선택 파일을 `workfiles/05_working/01_character/01_character_sisters_ref_v01.png`로 저장한다.
+선택 파일을 `캐릭터 기준본 v01`로 저장한다.
 
 ### 현재 v00의 두 점만 보정할 때
 
@@ -231,8 +177,8 @@ AIBB 동생 본인의 왼쪽 볼, 즉 정면 이미지를 보는 사람 기준�
 
 입력 이미지:
 
-1. `workfiles/05_working/01_character/01_character_sisters_ref_v00_점보정전.png` — 편집 대상
-2. `workfiles/03_references/character_faces/02_GPT입력용_합본/AIBB_동생_얼굴_합본.png` — 두 점 위치와 메이크업 참고
+1. `캐릭터 v00 (점 보정 전)` — 편집 대상
+2. `레퍼런스: AIBB 동생 얼굴 합본` — 두 점 위치와 메이크업 참고
 
 ```text
 첫 번째 이미지의 두 자매 캐릭터 사진을 수정해줘. 두 번째 이미지는 AIBB 동생 얼굴의 시그니처 점 위치만 참고한다.
@@ -244,15 +190,15 @@ AIBB 동생 본인의 왼쪽 볼, 즉 정면 이미지를 보는 사람 기준�
 출력 직전에 반드시 확인한다: AIBB 동생 본인의 왼쪽 볼에 점이 정확히 두 개 존재하며, 시청자 기준 얼굴 오른쪽에 선명하게 보이는가? 이 조건을 만족할 때만 결과를 출력한다.
 ```
 
-보정 결과를 `workfiles/05_working/01_character/01_character_sisters_ref_v01.png`로 저장하고 v00은 비교용으로 남긴다.
+보정 결과를 `캐릭터 기준본 v01`로 저장하고 v00은 비교용으로 남긴다.
 
-## 7. 2단계 — THE COLOR HOUSE 메인 비주얼 기준 이미지
+## 6. 2단계 — THE COLOR HOUSE 메인 비주얼 기준 이미지
 
 ### 입력 레퍼런스 3장
 
-1. `workfiles/03_references/ref_01_자매의_인형의집_사진만.png`
-2. `workfiles/03_references/ref_04_BBIA_AIBB_통합보드.png`
-3. `workfiles/05_working/01_character/01_character_sisters_ref_v01.png`
+1. `레퍼런스: 인형의 집 공간`
+2. `레퍼런스: BBIA × AIBB 통합보드`
+3. `캐릭터 기준본 v01`
 
 ### GPT 프롬프트
 
@@ -276,16 +222,16 @@ AIBB 동생 본인의 왼쪽 볼, 즉 정면 이미지를 보는 사람 기준�
 집 모양을 유치한 장난감처럼 만들지 않는다. 사람의 크기를 서로 다르게 만들지 않는다. 추가 인물, 어린이, 거대한 화장품, 떠다니는 물체, 케이크, 텍스트, 로고, 워터마크를 넣지 않는다. 손가락과 가구 구조가 자연스러워야 한다.
 ```
 
-선택 파일을 `workfiles/05_working/02_key_visual/02_keyvisual_color_house_ref_v01.png`로 저장한다.
+선택 파일을 `공간 기준본 v01`로 저장한다.
 
 ### 현재 v00의 집 구조와 중앙부만 보정할 때
 
-현재 결과는 `workfiles/99_archive/failed_generations/02_keyvisual_color_house_ref_v00_구조보정전.png`로 보관한다. 자매·컬러·방의 분위기는 합격이지만, 두 채의 집처럼 보이는 이중 지붕과 중앙을 가리는 높은 의자 때문에 `하나의 집 안의 두 방`과 공용 화장대가 약하다.
+현재 결과는 `공간 v00 (구조 보정 전)`로 보관한다. 자매·컬러·방의 분위기는 합격이지만, 두 채의 집처럼 보이는 이중 지붕과 중앙을 가리는 높은 의자 때문에 `하나의 집 안의 두 방`과 공용 화장대가 약하다.
 
 #### 입력 방식
 
 1. 최초 2단계 이미지를 생성한 **같은 이미지 생성 세션**을 유지한다.
-2. 메시지 입력창에 `workfiles/99_archive/failed_generations/02_keyvisual_color_house_ref_v00_구조보정전.png`를 다시 첨부한다. ChatGPT가 직전 결과를 문맥으로 알고 있더라도 수정 대상을 명확히 고정하기 위해 다시 첨부한다.
+2. 메시지 입력창에 `공간 v00 (구조 보정 전)`를 다시 첨부한다. ChatGPT가 직전 결과를 문맥으로 알고 있더라도 수정 대상을 명확히 고정하기 위해 다시 첨부한다.
 3. 다른 레퍼런스는 추가하지 않는다. 얼굴·제품보드·인형의 집 이미지를 다시 넣으면 이미 합격한 인물과 방이 재해석될 수 있다.
 4. 아래 보충 프롬프트를 이미지와 함께 한 번에 전송한다.
 
@@ -328,17 +274,17 @@ AIBB 동생 본인의 왼쪽 볼, 즉 정면 이미지를 보는 사람 기준�
 - 중앙 열린 문이 `One DNA`의 연결 장치로 즉시 읽힌다.
 - 공용 화장대가 보이되 자매와 열린 문을 가리지 않는다.
 - v00의 자매 얼굴, AIBB 점 두 개, 의상, 컬러칩과 좌우 방 분위기가 유지된다.
-- 위 조건을 만족하면 `workfiles/05_working/02_key_visual/02_keyvisual_color_house_ref_v01.png`로 확정한다.
+- 위 조건을 만족하면 `공간 기준본 v01`로 확정한다.
 
-> 완료 기록: 구조 보정을 완료하고 `workfiles/05_working/02_key_visual/02_keyvisual_color_house_ref_v01.png`를 2단계 최종 기준본으로 확정했다. 1536×1024 PNG, SHA-256 `0ee881dbf4e29e6d97c10364b67eba7a6bb8b112fd2781f59ce20f280039b10f`. 하나의 연속된 집 외곽, 중앙 열린 통로, 공용 화장대, 좌우 브랜드 공간과 두 자매의 일관성을 확인했다.
+> 완료 기록: 구조 보정을 완료하고 `공간 기준본 v01`를 2단계 최종 기준본으로 확정했다.. 하나의 연속된 집 외곽, 중앙 열린 통로, 공용 화장대, 좌우 브랜드 공간과 두 자매의 일관성을 확인했다.
 
-## 8. 3단계 — COLOR ROOM DUO 제품 기준 이미지
+## 7. 3단계 — COLOR ROOM DUO 제품 기준 이미지
 
 ### 입력 레퍼런스
 
-1. `workfiles/05_working/02_key_visual/02_keyvisual_color_house_ref_v01.png`
-2. `workfiles/03_references/ref_02_AIBB_제품보드_슬라이드03-13.png`
-3. `workfiles/03_references/ref_03_BBIA_제품보드_슬라이드14-23.png`
+1. `공간 기준본 v01`
+2. `레퍼런스: AIBB 제품보드`
+3. `레퍼런스: BBIA 제품보드`
 
 ### GPT 프롬프트
 
@@ -358,16 +304,16 @@ AIBB 동생 본인의 왼쪽 볼, 즉 정면 이미지를 보는 사람 기준�
 제품 표면에는 나중에 공식 로고를 넣을 수 있는 작은 빈 영역만 남긴다. 이미지 안에 임의의 로고, 제품명, 글자, 숫자, 워터마크를 생성하지 않는다. 집 지붕, 창문 그림, 문손잡이 장식처럼 유치한 집 모양을 직접 붙이지 않는다. 원통형 크림통, 키링 제품, 주얼리, 두꺼운 스킨케어 용기처럼 만들지 않는다. 정확히 하나의 제품 디자인만 사용하며 열린 제품과 닫힌 제품의 구조·색·비율이 같아야 한다.
 ```
 
-선택 파일을 `workfiles/05_working/03_product/03_product_color_room_duo_ref_v01.png`로 저장한다.
+선택 파일을 `제품 기준본 v01`로 저장한다.
 
 ### 현재 v00의 개폐 구조를 보정할 때
 
-현재 결과는 `workfiles/99_archive/failed_generations/03_product_color_room_duo_ref_v00_개폐구조불일치.png`로 보관한다. 컬러·소재·촬영 무드는 좋지만, 열린 제품은 정사각형 두 판이 중앙에서 접히는 구조이고 닫힌 제품은 반쪽 두 개가 좌우로 붙은 구조라 서로 같은 제품일 수 없다.
+현재 결과는 `제품 v00 (개폐 구조 불일치)`로 보관한다. 컬러·소재·촬영 무드는 좋지만, 열린 제품은 정사각형 두 판이 중앙에서 접히는 구조이고 닫힌 제품은 반쪽 두 개가 좌우로 붙은 구조라 서로 같은 제품일 수 없다.
 
 #### 입력 방식
 
 1. 최초 3단계 이미지를 생성한 같은 이미지 생성 세션을 유지한다.
-2. `workfiles/99_archive/failed_generations/03_product_color_room_duo_ref_v00_개폐구조불일치.png` 한 장만 다시 첨부한다.
+2. `제품 v00 (개폐 구조 불일치)` 한 장만 다시 첨부한다.
 3. 아래 보충 프롬프트를 이미지와 함께 한 번에 전송한다.
 
 #### 보충 프롬프트
@@ -406,9 +352,9 @@ AIBB 동생 본인의 왼쪽 볼, 즉 정면 이미지를 보는 사람 기준�
 네 조건을 모두 만족하는 제품 이미지 한 장만 출력한다.
 ```
 
-> 완료 기록: 개폐 구조 보정을 완료하고 `workfiles/05_working/03_product/03_product_color_room_duo_ref_v01.png`를 3단계 최종 제품 기준본으로 확정했다. 1254×1254 PNG, SHA-256 `191abdf45c5ad0f2a5b7e682a31a37aebbee1561de767534bb6365e85219d7e9`. 하나의 고정 베이스, 좌우 반쪽 팬, 바깥쪽 좌우 힌지와 양문형 뚜껑, 열린 상태와 닫힌 상태의 색·구조 대응을 확인했다.
+> 완료 기록: 개폐 구조 보정을 완료하고 `제품 기준본 v01`를 3단계 최종 제품 기준본으로 확정했다.. 하나의 고정 베이스, 좌우 반쪽 팬, 바깥쪽 좌우 힌지와 양문형 뚜껑, 열린 상태와 닫힌 상태의 색·구조 대응을 확인했다.
 
-## 9. 4단계 — PiiX 제품 최종 시안
+## 8. 4단계 — PiiX 제품 최종 시안
 
 4단계의 제품정보 입력, 리서치·디자인 매핑 수정, 자동 프롬프트 검수와 최종 생성 기록은 이 절의 `4단계 실제 진행기록`에 통합한다. 별도 진행기록 파일을 만들지 않는다.
 
@@ -416,7 +362,7 @@ AIBB 동생 본인의 왼쪽 볼, 즉 정면 이미지를 보는 사람 기준�
 
 1. 제품정보 노드에 아래 제품정보를 입력한다.
 2. 자동 생성된 리서치 섹션과 디자인 매핑 섹션을 열어보되, 확정된 제품 구조·색·재질과 충돌하는 제안은 이미지 생성에 반영하지 않는다.
-3. 이미지 생성 노드에는 `workfiles/05_working/03_product/03_product_color_room_duo_ref_v01.png` 한 장만 첨부한다. 이 단계에서는 통합 브랜드보드나 메인 비주얼을 함께 넣지 않는다.
+3. 이미지 생성 노드에는 `제품 기준본 v01` 한 장만 첨부한다. 이 단계에서는 통합 브랜드보드나 메인 비주얼을 함께 넣지 않는다.
 4. 모델은 **나노바나나 프로(40C)**를 선택한다. 이번 작업은 신규 발상보다 레퍼런스 제품의 구조·재질·구도 보존이 우선이다.
 5. 자동 작성된 범용 프롬프트를 그대로 사용하지 않고, 아래 PiiX 이미지 생성 프롬프트로 교체한다.
 
@@ -441,14 +387,14 @@ AIBB 동생 본인의 왼쪽 볼, 즉 정면 이미지를 보는 사람 기준�
 
 타깃 및 사용 장면: 자신에게 어울리는 컬러와 제형을 선택하고 조합하는 20~30대 K-뷰티 소비자. 화장대 위에서 두 제형을 한 제품으로 간편하게 사용하는 장면을 전제로 한다.
 
-기준 이미지 우선: 첨부할 `workfiles/05_working/03_product/03_product_color_room_duo_ref_v01.png`의 제품 실루엣, 개폐 구조, 핑크·레드 배치, 소재, 촬영 구도와 배경을 최우선 기준으로 사용한다. 리서치나 디자인 매핑이 기준 이미지와 충돌하면 기준 이미지를 따른다. 제품을 재디자인하지 않는다.
+기준 이미지 우선: 첨부할 `제품 기준본 v01`의 제품 실루엣, 개폐 구조, 핑크·레드 배치, 소재, 촬영 구도와 배경을 최우선 기준으로 사용한다. 리서치나 디자인 매핑이 기준 이미지와 충돌하면 기준 이미지를 따른다. 제품을 재디자인하지 않는다.
 ```
 
 ### 이미지 생성 노드 첨부
 
-- 첨부 이미지: `workfiles/05_working/03_product/03_product_color_room_duo_ref_v01.png` 한 장
+- 첨부 이미지: `제품 기준본 v01` 한 장
 - 참조 강도나 이미지 보존 옵션이 있으면 높은 값으로 설정한다.
-- `workfiles/03_references/ref_04_BBIA_AIBB_통합보드.png`는 이 단계에 첨부하지 않는다. 브랜드보드의 다른 제품 형태가 구조에 섞이는 것을 방지한다.
+- `레퍼런스: BBIA × AIBB 통합보드`는 이 단계에 첨부하지 않는다. 브랜드보드의 다른 제품 형태가 구조에 섞이는 것을 방지한다.
 - 생성 수량은 우선 1장으로 테스트한다. 구조가 유지될 때만 추가 변형을 생성한다.
 
 ### PiiX 이미지 생성 프롬프트
@@ -492,7 +438,7 @@ Before output, verify that the open product can be closed mechanically into the 
 
 최종 파일을 `assets/final/01_color_room_duo_product.png`로 저장한다.
 
-> 완료 기록: 나노바나나 프로를 사용해 `assets/final/01_color_room_duo_product.png`를 PiiX 제품 최종 시안으로 확정했다. 1024×1024 PNG, SHA-256 `555594def1ec825a3053d44996d1c1e65f518bcd5797661695339128cd898e61`. 하나의 고정 베이스, 좌우 외곽 힌지, 팬과 뚜껑의 색 대응, 열린 상태와 닫힌 상태의 구조 일치를 확인했다.
+> 완료 기록: 나노바나나 프로를 사용해 `assets/final/01_color_room_duo_product.png`를 PiiX 제품 최종 시안으로 확정했다.. 하나의 고정 베이스, 좌우 외곽 힌지, 팬과 뚜껑의 색 대응, 열린 상태와 닫힌 상태의 구조 일치를 확인했다.
 
 ### 4단계 실제 진행기록
 
@@ -558,12 +504,11 @@ PiiX 자동 프롬프트가 위 오류를 다시 포함해 전체를 삭제하�
 
 - 선택 모델: `나노바나나 프로(40C)`
 - 선택 이유: 신규 발상보다 기준 이미지의 형태와 분위기 일관성 유지가 우선
-- 입력: `workfiles/05_working/03_product/03_product_color_room_duo_ref_v01.png` 한 장
+- 입력: `제품 기준본 v01` 한 장
 - 결과: `assets/final/01_color_room_duo_product.png`, 1024×1024 PNG
-- SHA-256: `555594def1ec825a3053d44996d1c1e65f518bcd5797661695339128cd898e61`
 - 검수: 고정 베이스, 외곽 좌우 힌지, 중앙 이음선, 좌우 팬·뚜껑 대응, 열린·닫힌 구조 일치, 임의 문자·로고 부재를 확인했다.
 
-## 10. 5단계 — PiiX 연출 이미지 1: 메인 자매 장면
+## 9. 5단계 — PiiX 연출 이미지 1: 메인 자매 장면
 
 ### 실제 PiiX 노드
 
@@ -585,8 +530,8 @@ PiiX의 `이미지 수정` 노드는 다음 기능을 제공한다.
 ### 레퍼런스 첨부 순서
 
 1. 이미지 1 — `assets/final/01_color_room_duo_product.png`: 제품 구조·색·소재의 절대 기준
-2. 이미지 2 — `workfiles/05_working/01_character/01_character_sisters_ref_v01.png`: BBIA 언니와 AIBB 동생의 얼굴·헤어·의상 기준
-3. 이미지 3 — `workfiles/05_working/02_key_visual/02_keyvisual_color_house_ref_v01.png`: 한 집 안의 두 방·공용 화장대·공간 컬러 기준
+2. 이미지 2 — `캐릭터 기준본 v01`: BBIA 언니와 AIBB 동생의 얼굴·헤어·의상 기준
+3. 이미지 3 — `공간 기준본 v01`: 한 집 안의 두 방·공용 화장대·공간 컬러 기준
 
 세 이미지는 업로드 순서와 프롬프트의 이미지 번호를 일치시킨다. 다른 브랜드보드나 얼굴 합본을 추가하지 않는다.
 
@@ -629,7 +574,7 @@ BBIA 언니는 열린 제품의 왼쪽 뮤트 로즈 블러 팬을 가볍게 선
 
 ### 현재 v00 평가와 제품 크기 보정
 
-첫 결과는 `workfiles/99_archive/failed_generations/05_piix_scene_01_main_v00_제품크기보정전.png`로 보관한다. 2048×2048 PNG, SHA-256 `08ad4e457806ae6592bb6235b28a5b54944f6cada624ae44c5b8dac25fc07802`.
+첫 결과는 `메인 연출 v00 (제품 크기 보정 전)`로 보관한다..
 
 합격 요소는 BBIA 언니 왼쪽·AIBB 동생 오른쪽 배치, 자매 얼굴과 AIBB 점 두 개, 한 집 안의 좌우 컬러룸, 자연스러운 눈맞춤, 제품의 외곽 좌우 힌지와 컬러 대응이다. 불합격 요소는 제품이 손바닥 크기가 아니라 약 30cm 이상의 디스플레이 소품처럼 보이고 두 사람의 손이 제품 위에 올라가 실제 콤팩트의 크기와 사용성이 약해진 점이다.
 
@@ -657,9 +602,9 @@ v00 결과를 `이미지 수정 → 편집 → 부분수정` 노드에 연결한
 제품을 추가하거나 새로운 소품을 만들지 않는다. 제품의 핑크·레드 위치를 바꾸지 않는다. 임의 로고, 글자, 숫자와 워터마크를 생성하지 않는다. 선택 영역 안에서 축소된 제품 주변은 기존과 동일한 크림색 화장대 상판으로 자연스럽게 채운다.
 ```
 
-부분수정 결과가 합격하면 `workfiles/05_working/04_campaign/05_piix_scene_01_roomwide_alt_v01.png`로 저장한다. 제품이나 손이 깨지면 부분수정을 한 번 더 시도하고, 두 번 연속 실패할 때만 아래 2차 재생성으로 전환한다.
+부분수정 결과가 합격하면 `방 전체 연출 대안 v01`로 저장한다. 제품이나 손이 깨지면 부분수정을 한 번 더 시도하고, 두 번 연속 실패할 때만 아래 2차 재생성으로 전환한다.
 
-> 완료 기록: GPT Image v2 부분수정 결과 2장을 비교해 `수정2`를 선택했다. 1024×1024 PNG, SHA-256 `6d1982fdfff37a104b17a29e2de9b20bdbaaf4407af87d9aafa812f90d2ac0b5`. 이후 사용자가 근접 사용 장면을 실제 연출컷으로 다시 지정했으므로 이 이미지는 `workfiles/05_working/04_campaign/05_piix_scene_01_roomwide_alt_v01.png`로 재분류했다. `수정1`은 비선택했다.
+> 완료 기록: GPT Image v2 부분수정 결과 2장을 비교해 `수정2`를 선택했다.. 이후 사용자가 근접 사용 장면을 실제 연출컷으로 다시 지정했으므로 이 이미지는 `방 전체 연출 대안 v01`로 재분류했다. `수정1`은 비선택했다.
 
 #### 2차 보정 대안 — 연출샷 전체 재생성(40C)
 
@@ -667,9 +612,9 @@ v00 결과를 `이미지 수정 → 편집 → 부분수정` 노드에 연결한
 
 ##### 보정용 레퍼런스 3장
 
-1. 이미지 1 — `workfiles/99_archive/failed_generations/05_piix_scene_01_main_v00_제품크기보정전.png`: 현재 장면·공간·인물 배치 기준
+1. 이미지 1 — `메인 연출 v00 (제품 크기 보정 전)`: 현재 장면·공간·인물 배치 기준
 2. 이미지 2 — `assets/final/01_color_room_duo_product.png`: 제품 구조·비율·소재 기준
-3. 이미지 3 — `workfiles/05_working/01_character/01_character_sisters_ref_v01.png`: 자매 얼굴과 AIBB 점 두 개 기준
+3. 이미지 3 — `캐릭터 기준본 v01`: 자매 얼굴과 AIBB 점 두 개 기준
 
 현재 v00이 공간 기준을 이미 포함하므로 보정 생성에서는 THE COLOR HOUSE 메인 비주얼 대신 v00을 첫 번째 레퍼런스로 사용한다.
 
@@ -706,40 +651,39 @@ v00 결과를 `이미지 수정 → 편집 → 부분수정` 노드에 연결한
 다섯 조건을 만족하는 수정 연출 이미지 한 장만 생성한다.
 ```
 
-## 11. 근접 사용 연출안 기록
+## 10. 근접 사용 연출안 기록
 
-- 사용자가 다시 지정한 실제 연출컷은 `workfiles/05_working/04_campaign/06_piix_scene_02_closeup_v00.png`에서 시작한 근접 사용 장면이다.
-- PiiX 원본: `workfiles/05_working/04_campaign/06_piix_scene_02_closeup_v00.png`, 2048×2048 PNG, SHA-256 `2655e7e0969223e6ba5dfb0c6d531de2817a4f17c143ab001597a597049e7bce`. PiiX 플로우보드 안에서 직접 선택할 수 있는 제출 후보이다.
-- 나노바나나 수정본: `workfiles/05_working/04_campaign/06_nanobanana_scene_02_closeup_v01.png`, 1024×1024 PNG, SHA-256 `c89585eda8a1a7be139de9872d13c1ed7dcd55707c174ff6e0a6d7c5313b7da4`. 제품 크기와 화면 집중도는 개선됐지만 외부 생성 결과이므로 PiiX 보드에서 직접 선택할 수 있는지는 보드 연결 상태를 확인해야 한다.
-- 이후 사용자가 점 두 개가 정리된 새 이미지를 전달했다. `workfiles/05_working/04_campaign/07_scene_closeup_people_ref_v01.png`, 1254×1254 PNG, SHA-256 `2e6f903bc00776dd5e2e69411e3fa2943abcff8b496b0dd982d80a39190d2492`. 오른쪽 AIBB 동생의 시청자 기준 얼굴 오른쪽 볼에 점이 정확히 두 개이며 인물·표정·손·배경 구도는 좋다. 그러나 제품이 과대하고 전면 합성물처럼 보이며, 양쪽 뚜껑 색·팬 비율·모서리 곡률이 제품 최종본과 달라 제품 기준으로는 사용하지 않는다.
-- `workfiles/05_working/04_campaign/06_nanobanana_scene_02_closeup_v01.png`에는 점이 여러 개 남아 있으므로 점 기준본으로 사용하지 않는다.
-- 방 전체 정사각형 장면은 `workfiles/05_working/04_campaign/05_piix_scene_01_roomwide_alt_v01.png`로 유지한다. 제출 화면에서 연출컷을 최대 3개 선택할 수 있으므로 PiiX 보드에 존재한다면 보조 후보로 사용할 수 있다.
+- 사용자가 다시 지정한 실제 연출컷은 `근접 연출 PiiX 원본 v00`에서 시작한 근접 사용 장면이다.
+- PiiX 원본: `근접 연출 PiiX 원본 v00`. PiiX 플로우보드 안에서 직접 선택할 수 있는 제출 후보이다.
+- 나노바나나 수정본: `근접 연출 외부 보정본 v01`. 제품 크기와 화면 집중도는 개선됐지만 외부 생성 결과이므로 PiiX 보드에서 직접 선택할 수 있는지는 보드 연결 상태를 확인해야 한다.
+- 이후 사용자가 점 두 개가 정리된 새 이미지를 전달했다. `근접 연출 인물 기준본 v01`. 오른쪽 AIBB 동생의 시청자 기준 얼굴 오른쪽 볼에 점이 정확히 두 개이며 인물·표정·손·배경 구도는 좋다. 그러나 제품이 과대하고 전면 합성물처럼 보이며, 양쪽 뚜껑 색·팬 비율·모서리 곡률이 제품 최종본과 달라 제품 기준으로는 사용하지 않는다.
+- `근접 연출 외부 보정본 v01`에는 점이 여러 개 남아 있으므로 점 기준본으로 사용하지 않는다.
+- 방 전체 정사각형 장면은 `방 전체 연출 대안 v01`로 유지한다. 제출 화면에서 연출컷을 최대 3개 선택할 수 있으므로 PiiX 보드에 존재한다면 보조 후보로 사용할 수 있다.
 
 ### 크레딧 복구 후 근접 연출 제품 교체
 
-- 레퍼런스 1: `workfiles/05_working/04_campaign/07_scene_closeup_people_ref_v01.png` — 인물·점 두 개·손·배경·카메라 구도 기준. 기존 제품은 무시한다.
+- 레퍼런스 1: `근접 연출 인물 기준본 v01` — 인물·점 두 개·손·배경·카메라 구도 기준. 기존 제품은 무시한다.
 - 레퍼런스 2: `assets/final/01_color_room_duo_product.png` — 제품 구조·색·소재·크기 기준. 이미지 왼쪽 위의 열린 제품만 사용한다.
 - 비율: 1:1
 - 목표: 레퍼런스 1의 인물과 장면은 거의 그대로 보존하고, 하단의 어색한 제품 영역만 레퍼런스 2의 열린 COLOR ROOM DUO로 교체한다.
 - 제품 배치: 현재 제품보다 약 25~30% 작게, 테이블 중앙에 전체 외곽이 잘리지 않도록 배치하고 테이블 원근과 접지 그림자를 일치시킨다. 왼쪽 핑크 팬·핑크 뚜껑, 오른쪽 레드 팬·젤리 레드 뚜껑, 좌우 바깥 힌지와 중앙 실버 이음선을 명확히 한다.
 - 금지: 얼굴 재생성, 점 삭제·추가, 손가락 변경, 제품 확대, 중앙 책형 힌지, 추가 문자·로고·워터마크
 
-## 12. 6단계 — 1주년 4:5 포스터
+## 11. 6단계 — 1주년 4:5 포스터
 
 ### 제작 결정
 
 PiiX `포스터(15C)` v00은 사진과 타이포가 하나의 장면으로 결합된 구도와 하단 로고의 시각적 힘이 가장 좋다는 사용자 평가를 받았다. 지정하지 않은 영문 설명, `Be Brave As I Am.`, 필수 문구 누락과 상단 검은 모서리는 남아 있으므로 현재 그대로 확정하지 않고, 크레딧 복구 후 구도는 보존한 채 오류만 최소 수정한다.
 
-- 선호 구도 기준본: `workfiles/05_working/05_poster/09_piix_poster_preferred_visual_v00.png`
-- 크기: 896×1120 PNG
-- SHA-256: `2a484a26d0bafd6e36377d7243a7dbd1dc3aaab4779d92037ada7a54762499c7`
+- 선호 구도 기준본: `PiiX 포스터 선호 구도 v00`
+- 크기: 896×1120
 - 수정 대상: 임의 문구 삭제, 필수 카피 적용, 상단 검은 삼각형 제거, 하단 브랜드 락업의 색상·크기 정돈
 
-수동 조판 v03과 PiiX 포스터 v01은 안전한 백업으로 유지한다. 최종 선호 방향은 **포스터 장면과 타이포그래피가 한 화면 안에서 결합된 v00 구도**다. 크레딧 복구 후 `workfiles/05_working/05_poster/09_piix_poster_preferred_visual_v00.png` 한 장을 레퍼런스로 넣고 사진·인물·제품·구도를 거의 보존하면서 텍스트와 검은 모서리만 수정한다.
+수동 조판 v03과 PiiX 포스터 v01은 안전한 백업으로 유지한다. 최종 선호 방향은 **포스터 장면과 타이포그래피가 한 화면 안에서 결합된 v00 구도**다. 크레딧 복구 후 `PiiX 포스터 선호 구도 v00` 한 장을 레퍼런스로 넣고 사진·인물·제품·구도를 거의 보존하면서 텍스트와 검은 모서리만 수정한다.
 
 ### 크레딧 복구 후 선호 포스터 최소 수정
 
-- 레퍼런스: `workfiles/05_working/05_poster/09_piix_poster_preferred_visual_v00.png` 한 장
+- 레퍼런스: `PiiX 포스터 선호 구도 v00` 한 장
 - 비율: 4:5
 - 절대 보존: 자매·제품·방·카메라 구도, 사진 안에 타이포가 통합된 구성, 하단 락업의 시각적 무게
 - 삭제: 긴 임의 영문, `Be Brave As I Am.`, 상단 검은 삼각형
@@ -751,15 +695,15 @@ PiiX `포스터(15C)` v00은 사진과 타이포가 하나의 장면으로 결�
 
 #### 비교 결과
 
-- Gemini 결과: 928×1152 PNG, SHA-256 `7b76783eb3c7bd5135a7bea4fc1af0ad623b9c4a6e017ec3434a72942a30a134`. 인물이 크게 잘려 상단 조판 여백이 적고 우하단에 별 모양 아티팩트가 있어 제외했다. `workfiles/99_archive/failed_generations/06_poster_base_gemini_v00_구도아티팩트.png`
-- GPT 결과: 1122×1402 PNG, SHA-256 `a34560a72c72cd990bcff3cb258ffc57e6dd65ac058036a01446394f148a87bc`. 집 전체·자매·제품의 관계가 잘 읽히고 상단 지붕 여백이 조판에 적합해 선택했다. 다만 AIBB 점 위치를 보정해야 한다. `workfiles/99_archive/failed_generations/06_poster_base_gpt_v00_점보정전.png`
+- Gemini 결과:. 인물이 크게 잘려 상단 조판 여백이 적고 우하단에 별 모양 아티팩트가 있어 제외했다. `4:5 베이스 Gemini v00 (구도 아티팩트)`
+- GPT 결과:. 집 전체·자매·제품의 관계가 잘 읽히고 상단 지붕 여백이 조판에 적합해 선택했다. 다만 AIBB 점 위치를 보정해야 한다. `4:5 베이스 GPT v00 (점 보정 전)`
 
 이 단계는 나노바나나 프로 기본 원칙의 **구도 선정·국소 보정 예외**다. 포스터 베이스에서 GPT 결과의 품질이 더 높아 선택했고, 점 국소 보정도 같은 GPT 베이스의 일관성을 가장 잘 유지한 결과를 채택했다. 이 예외는 포스터 베이스에만 한정한다.
 
 #### 실제 GPT 국소 보정
 
-1. `workfiles/99_archive/failed_generations/06_poster_base_gpt_v00_점보정전.png` — 수정 대상
-2. `workfiles/05_working/01_character/01_character_sisters_ref_v01.png` — AIBB 점 위치·개수 기준
+1. `4:5 베이스 GPT v00 (점 보정 전)` — 수정 대상
+2. `캐릭터 기준본 v01` — AIBB 점 위치·개수 기준
 
 ```text
 [국소 편집 목표]
@@ -781,7 +725,7 @@ PiiX `포스터(15C)` v00은 사진과 타이포가 하나의 장면으로 결�
 세 조건을 만족하는 수정 이미지 한 장만 출력한다.
 ```
 
-합격한 점 보정본을 `workfiles/05_working/05_poster/06_poster_base_4x5_v01.png`로 저장했다. 1123×1401 PNG, SHA-256 `cfe3e2f96991ff422b3b1bef6c040cf8b553786148043148b555013fa6e69d22`. 점 보정 전 작업본은 `workfiles/99_archive/failed_generations/06_poster_base_gpt_v00_점보정전.png`으로 이동했다.
+합격한 점 보정본을 `4:5 무문자 베이스 v01`로 저장했다.. 점 보정 전 작업본은 `4:5 베이스 GPT v00 (점 보정 전)`으로 이동했다.
 
 ### 12-2. 수동 타이포그래피 조판
 
@@ -797,15 +741,15 @@ PiiX `포스터(15C)` v00은 사진과 타이포가 하나의 장면으로 결�
 
 v01은 중앙 정렬 산세리프 헤드라인과 하단 흰색 캡슐 바 때문에 웹사이트 UI·랜딩 페이지처럼 보였다. 패션 매거진 무드와 충돌해 제외했다.
 
-- 폐기 PNG: `workfiles/99_archive/old_layouts/07_poster_final_4x5_v01_UI형조판.png`
-- 폐기 소스: `workfiles/99_archive/old_layouts/07_poster_layout_renderer_v01_UI형조판.swift`
+- 폐기 PNG: `조판본 v01 (UI형)`
+- 폐기 소스: `조판 소스 v01 (UI형)`
 
 #### v02 제외
 
 v02는 Didot 제목과 Noto Sans KR 모서리 캡션의 서체 성격이 통일되지 않았고, 제목과 지붕 몰딩·건축 구분선이 겹쳐 시각적으로 혼잡했다. 사용자의 검수 의견에 따라 최종 후보에서 제외했다.
 
-- 폐기 PNG: `workfiles/99_archive/old_layouts/07_poster_final_4x5_v02_건축선충돌.png`
-- 폐기 소스: `workfiles/99_archive/old_layouts/07_poster_layout_renderer_v02_건축선충돌.swift`
+- 폐기 PNG: `조판본 v02 (건축선 충돌)`
+- 폐기 소스: `조판 소스 v02 (건축선 충돌)`
 
 #### v03 확정 조판
 
@@ -818,23 +762,22 @@ v02는 Didot 제목과 Noto Sans KR 모서리 캡션의 서체 성격이 통일�
 - BBIA 로고: 가로 105px, 300dpi 환산 약 8.89mm로 최소 규정 충족
 - 인물·제품은 가리지 않으며 하단의 비핵심 테이블 다리만 크롭
 
-- 조판 소스: `workfiles/05_working/05_poster/07_poster_layout_renderer_v03.swift`
-- 완성 PNG: `workfiles/05_working/05_poster/07_poster_editorial_4x5_v03.png`
-- 크기: 1120×1400 PNG
-- SHA-256: `f8a3384c967eee5f65f5d07d7aef0b314370f19c06f32e4d669752fe1f1cfcd7`
+- 조판 소스: `process/poster-layout-renderer.swift`
+- 완성 PNG: `수동 조판본 v03`
+- 크기: 1120×1400
 
 ### 12-3. PiiX 포스터 최종화 테스트
 
-수동 조판본을 거의 완성된 절대 레퍼런스로 사용해 PiiX 포스터 노드에서 한 번만 최종화를 테스트한다. PiiX가 문구·구도·제품·얼굴을 변경하면 해당 결과를 제출본으로 사용하지 않고 `workfiles/05_working/05_poster/07_poster_editorial_4x5_v03.png`를 최종본으로 유지한다.
+수동 조판본을 거의 완성된 절대 레퍼런스로 사용해 PiiX 포스터 노드에서 한 번만 최종화를 테스트한다. PiiX가 문구·구도·제품·얼굴을 변경하면 해당 결과를 제출본으로 사용하지 않고 `수동 조판본 v03`를 최종본으로 유지한다.
 
 설정:
 
 - 노드: 메인 자매 연출 결과 → `이미지 수정 → 연출 → 포스터(15C)`
 - 예시: `에디토리얼`
 - 비율: `4:5`
-- 레퍼런스 1: `workfiles/05_working/05_poster/07_poster_editorial_4x5_v03.png` — 레이아웃·문구·타이포그래피 절대 기준
+- 레퍼런스 1: `수동 조판본 v03` — 레이아웃·문구·타이포그래피 절대 기준
 - 레퍼런스 2: `assets/final/01_color_room_duo_product.png` — 제품 구조 절대 기준
-- 레퍼런스 3: `workfiles/05_working/01_character/01_character_sisters_ref_v01.png` — 자매 얼굴·AIBB 점 절대 기준
+- 레퍼런스 3: `캐릭터 기준본 v01` — 자매 얼굴·AIBB 점 절대 기준
 
 ```text
 [최종화 기준]
@@ -868,7 +811,7 @@ COLOR ROOM DUO
 다섯 조건을 모두 만족하는 포스터 한 장만 출력한다.
 ```
 
-PiiX 후보 파일은 `workfiles/05_working/05_poster/08_piix_poster_final_4x5_v01.png`로 저장한다. 아래 합격 기준과 PiiX 보드 제출 제약을 함께 검토한다.
+PiiX 후보 파일은 `PiiX 포스터 최종화 결과 v01`로 저장한다. 아래 합격 기준과 PiiX 보드 제출 제약을 함께 검토한다.
 
 #### 실제 PiiX 최종화 결과 — PiiX 제출용으로 채택
 
@@ -878,10 +821,9 @@ PiiX는 v03의 전체적인 4:5 구도와 문구 배치를 비슷하게 재현�
 - v03을 896×1120으로 맞춘 뒤 비교한 SSIM: `0.514100`
 - PSNR: `14.936178dB`
 - 판정: 수동 조판 원본의 픽셀 보존에는 실패했으나 문구·4:5 구성·캠페인 정보는 유지함
-- PiiX 제출용 포스터: `workfiles/05_working/05_poster/08_piix_poster_final_4x5_v01.png`
-- SHA-256: `e3de827e50c656ac949e4acc3ede9b246f83a3d47cc3f2025a166b1a1156a3d7`
+- PiiX 제출용 포스터: `PiiX 포스터 최종화 결과 v01`
 
-일반 이미지 제출이라면 수동 조판본 `workfiles/05_working/05_poster/07_poster_editorial_4x5_v03.png`의 해상도와 원본 보존성이 더 높다. 그러나 제출 화면이 PiiX 플로우보드 내부 생성물만 선택하는 방식이므로 실제 PiiX 제출에는 `workfiles/05_working/05_poster/08_piix_poster_final_4x5_v01.png`를 사용한다. 크레딧 소진으로 추가 생성은 진행하지 않는다.
+일반 이미지 제출이라면 수동 조판본 `수동 조판본 v03`의 해상도와 원본 보존성이 더 높다. 그러나 제출 화면이 PiiX 플로우보드 내부 생성물만 선택하는 방식이므로 실제 PiiX 제출에는 `PiiX 포스터 최종화 결과 v01`를 사용한다. 크레딧 소진으로 추가 생성은 진행하지 않는다.
 
 ### 12-4. 포스터 합격 기준
 
@@ -893,31 +835,9 @@ PiiX는 v03의 전체적인 4:5 구도와 문구 배치를 비슷하게 재현�
 - [ ] 타이포와 로고가 상단 편집 여백 안에만 있으며 지붕 몰딩·인물·제품·가구의 구분선과 겹치지 않는다.
 - [ ] 임의 문구, AI 문자, 워터마크와 변형된 로고가 없다.
 
-## 13. 제출 설명 초안
+## 12. 단계별 합격 기준
 
-### 제품명
-
-`COLOR ROOM DUO`
-
-### 디자인 의도
-
-BBIA와 AIBB는 하나의 DNA를 공유하지만 각자의 방식으로 색을 표현하는 자매 브랜드입니다. `COLOR ROOM DUO`는 서로 연결된 두 개의 방을 하나의 콤팩트에 담아, 닮았지만 다른 두 브랜드의 컬러 태도를 제품 구조로 표현했습니다.
-
-### 디자인 콘셉트
-
-하나의 고정 베이스 안에 더스티 로즈 컬러의 BBIA 블러 립앤치크와 젤리 레드 컬러의 AIBB 글로우 립앤치크가 좌우로 나란히 배치됩니다. 바깥쪽 힌지에서 양옆으로 열리고 중앙 세로선에서 만나는 두 개의 반쪽 뚜껑은 언니와 동생이 각자의 방을 열어 색을 선택하고 하나의 화장대에서 만나는 `THE COLOR HOUSE` 캠페인 서사를 담았습니다.
-
-### 캠페인 메시지
-
-`One DNA, Two Color Rooms.`
-
-`닮은 우리, 다른 색의 방.`
-
-### 키워드
-
-`#OneDNA #TheColorHouse #ColorRoomDuo #SisterColors #ColorArchive #MyColorsMyChoice #HappyAIBBDay`
-
-## 14. 단계별 합격 기준
+작업 중 사용한 체크리스트다. 미체크 항목은 목록을 만든 시점의 상태이며, 실제 제출은 13절 기록대로 2026-07-21에 완료했다.
 
 ### 캐릭터
 
@@ -969,39 +889,8 @@ BBIA와 AIBB는 하나의 DNA를 공유하지만 각자의 방식으로 색을 �
 - [ ] 캠페인 키워드
 - [ ] 2026-08-21 23:59 이전 제출
 
-## 15. 현재 상태
+## 13. 최종 제출 확정 — 2026-07-21
 
-- [x] 공식 PDF·공모전 요강 정리
-- [x] 브랜드·인형의 집 레퍼런스 분리
-- [x] BBIA × AIBB 통합 보드 생성
-- [x] AIBB 동생·BBIA 언니 얼굴 개별 정리본과 GPT 입력용 합본 생성
-- [x] 이전 제품 기획 격리
-- [x] THE COLOR HOUSE 콘셉트 확정
-- [x] 두 자매 캐릭터 기준 이미지 v01 확정 — `workfiles/05_working/01_character/01_character_sisters_ref_v01.png`, 1122×1402 PNG, SHA-256 `cca26337ed18a71a9bcc94fee37673f9781f240aca53d7ed069be2eb04ba8be3`
-- [x] 메인 비주얼 기준 이미지 v01 확정 — `workfiles/05_working/02_key_visual/02_keyvisual_color_house_ref_v01.png`, 1536×1024 PNG, SHA-256 `0ee881dbf4e29e6d97c10364b67eba7a6bb8b112fd2781f59ce20f280039b10f`
-- [x] COLOR ROOM DUO 제품 기준 이미지 v01 확정 — `workfiles/05_working/03_product/03_product_color_room_duo_ref_v01.png`, 1254×1254 PNG, SHA-256 `191abdf45c5ad0f2a5b7e682a31a37aebbee1561de767534bb6365e85219d7e9`
-- [x] PiiX 제품 최종 시안 v01 확정 — `assets/final/01_color_room_duo_product.png`, 1024×1024 PNG, SHA-256 `555594def1ec825a3053d44996d1c1e65f518bcd5797661695339128cd898e61`
-- [x] 방 전체 연출을 대안으로 재분류 — `workfiles/05_working/04_campaign/05_piix_scene_01_roomwide_alt_v01.png`
-- [x] 사용자가 지정한 근접 연출 PiiX 원본과 나노바나나 수정본 복원 — `workfiles/05_working/04_campaign/06_piix_scene_02_closeup_v00.png`, `workfiles/05_working/04_campaign/06_nanobanana_scene_02_closeup_v01.png`
-- [x] 점 두 개 근접 인물·구도 기준본 저장 및 제품 기준 제외 — `workfiles/05_working/04_campaign/07_scene_closeup_people_ref_v01.png`
-- [x] PiiX 포스터 v00을 사용자 선호 구도 기준본으로 복원 — `workfiles/05_working/05_poster/09_piix_poster_preferred_visual_v00.png`
-- [x] Gemini·GPT 4:5 무문자 베이스 비교 및 GPT 구도 선정
-- [x] GPT AIBB 점 위치·개수 국소 보정 및 4:5 무문자 베이스 v01 확정
-- [x] v01 UI형 조판 및 v02 건축선 충돌 조판 제외
-- [x] v03 단일 서체·전폭 상단 여백 조판 확정 및 4:5 PNG 렌더링
-- [x] 수동 조판본을 절대 레퍼런스로 사용한 PiiX 최종화 테스트 및 PiiX 제출용 포스터 확정
-- [x] 추가 생성 계획 종료 및 최종 연출 이미지 확정
-- [x] 추가 생성 계획 종료 및 최종 포스터 확정
-- [x] 제출 정보 최종 작성 및 QA
+최종 제출본은 제품 최종 시안·연출 이미지·4:5 포스터 3종으로 확정했다. 제품 시안은 PiiX 최종본을 그대로 쓰고, 연출 이미지와 포스터는 제출 전 품질 보정을 거친 파일을 사용했다.
 
-## 16. 최종 제출 확정 — 2026-07-21
-
-최종 제출본은 아래 3종으로 확정했다. 제품 시안은 기존 PiiX 최종본을 유지하고, 연출 이미지와 포스터는 제출 전 최종 품질 보정을 거친 파일을 사용했다. 최신 두 이미지의 세부 수정 과정은 공개 리포트와 본 문서에 추가로 기록하지 않는다.
-
-| 제출 항목 | 파일 | 규격 | SHA-256 |
-|---|---|---:|---|
-| 제품 최종 시안 | `assets/final/01_color_room_duo_product.png` | 1024×1024 | `555594def1ec825a3053d44996d1c1e65f518bcd5797661695339128cd898e61` |
-| 연출 이미지 | `assets/final/02_the_color_house_campaign.png` | 2048×2048 | `cc862311e892e8d3298f0d94bfea69435405f1388aa8a9e921cb2012835c8de0` |
-| 4:5 포스터 | `assets/final/03_happy_aibb_day_poster.png` | 896×1120 | `19fb57e441d47a7f2a6696352c7ab9604f7003ba2d95c0ced9708084322c6d15` |
-
-GitHub 공개본은 작업 원본·공식 제공 자료·폐기 이미지를 제외하고 루트의 `README.md`, `REPORT.md`, `assets/final/`만 사용한다. 프로젝트는 최종 제출본 확정과 공개 리포트 작성으로 종료한다.
+확정 파일과 규격은 [REPORT.md](../REPORT.md)의 파일 무결성 표에, 제출 설명 문구는 같은 문서의 제출 설명 절에 있다.

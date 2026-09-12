@@ -5,13 +5,13 @@
 | 문서 | 내용 |
 |---|---|
 | [master-workflow.md](master-workflow.md) | 콘셉트 확정부터 최종 제출까지의 단계별 프롬프트·합격 기준·실제 진행 기록 |
-| [brand-research.md](brand-research.md) | BBIA·AIBB 브랜드 분석과 초기 출품 전략 (이후 폐기된 1차 콘셉트 포함) |
+| [brand-research.md](brand-research.md) | 콘셉트 확정 전 단계의 BBIA·AIBB 브랜드 분석과 방향 비교 |
+| [rejected-concepts.md](rejected-concepts.md) | 채택하지 않은 제품 콘셉트 두 건과 당시 생성 프롬프트 |
 | [poster-layout-renderer.swift](poster-layout-renderer.swift) | 4:5 포스터의 타이포그래피를 손으로 조판하기 위해 작성한 AppKit 렌더러 |
-| [rejected-concepts/](rejected-concepts/) | 채택하지 않은 제품 콘셉트 두 건의 생성 프롬프트 |
 
 ## 공개 범위
 
-여기에는 직접 작성한 문서·프롬프트·코드만 담았다. 아래는 로컬 아카이브(`workfiles/`)에만 두고 공개하지 않는다.
+직접 작성한 문서·프롬프트·코드만 담았다. 아래는 로컬 아카이브에만 두고 공개하지 않는다.
 
 - 공식 브랜드 가이드 PDF와 로고 원본
 - 공모전 요강 원문 정리본
@@ -20,4 +20,6 @@
 
 ## 읽을 때 참고
 
-문서 안의 `workfiles/...` 경로와 Swift 파일의 절대 경로는 당시 로컬 작업 환경 기준이며, 공개 저장소에는 해당 파일이 없다. 기록의 원본성을 유지하려고 경로를 고치지 않고 그대로 두었다.
+문서는 중간 생성본을 `캐릭터 기준본 v01`, `제품 v00 (개폐 구조 불일치)`처럼 이름으로만 참조한다. 공개 저장소에 있는 이미지는 `assets/final/`의 최종 3종뿐이라 해당 파일은 여기에 없다.
+
+Swift 파일 상단의 절대 경로도 당시 로컬 작업 환경 기준이라 그대로는 실행되지 않는다.
