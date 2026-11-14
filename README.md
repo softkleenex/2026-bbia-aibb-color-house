@@ -1,5 +1,7 @@
 # THE COLOR HOUSE
 
+회고: [THE COLOR HOUSE 제작기](https://softkleenex.github.io/posts/2026-the-color-house/)
+
 > **BBIA × AIBB의 One DNA를 하나의 집, 두 개의 컬러룸, 하나의 듀얼 콤팩트로 번역한 2026 AIBB 1주년 캠페인 제안**
 
 ![THE COLOR HOUSE poster](assets/final/03_happy_aibb_day_poster.png)
